@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Control Structures</title>
+    </head>
+    <body>
+        <header><h1>Control Structures</h1></header>
+        <section>
+        Control Structures like:  
+        <ul>
+            <li><code>if(cond){...} else if(cond){...} ... else{...}</code>,</li>
+            <li><code>for( ; ; )</code>,</li>
+            <li><code>while(cond){...}</code>,</li>
+            <li><code>do{...}while(cond);</code>,</li>
+            <li><code>switch(exp){case exp: ...}</code>,</li>
+        </ul>
+        <p>work like in those in C Family of languages (C, C++, Java etc.)</p>
+        <h3>Some built-in data structures:</h3>
+        <ul>
+            <li><code>[ ... ]</code> is used to define <code>List</code> objects, which work like <code>list</code> from Python, which are iterable objects</li>
+            <li><code>{key: value, ... }</code> is used to define <code>Map</code> objects, which work like <code>dict</code> from Python.</li>
+        </ul>
+        <p>The above structures may or may not be dynamic-typed, like in Python.</p>
+        </section>
+        <header><h2>forEach looping</h2></header>
+        <section>
+            Let's look at an example.
+        <code><pre>
+        var list1 = ['A', 'B', 'C'];
+        print(list1);
+
+        list1.forEach(
+            (item){
+                print(item);
+            }
+        );
+        </pre></code>
+            The above code gives the following output:
+            <code><pre>['A', 'B', 'C']
+A
+B
+C
+            </pre></code>
+        </section>
+        <header><h1>Functions</h1></header>
+        <section>
+            <p>
+                Syntax like C Family, but supports nested functions like in Python.
+            </p>
+        <code><pre>
+        void main(){
+            var x = 10;
+            void printIt(String name, String age){
+                print(x);
+                print(name);
+                print(age);
+            }
+            printIt("Mukul", "20");
+        }</pre>
+        </code>
+        If we change the signature to <code>void printIt(String name, [String age])</code>, <code>age</code> becomes an optional parameter. In that case,
+        <code><pre>
+        void main(){
+            var x = 10;
+            void printIt(String name, [String age]){
+                print(x);
+                print(name);
+                print(age??x);
+            }
+            printIt("Mukul", "20");
+        }</pre></code>
+        <code>optional_param ?? default_value</code> is one feature we can use to assign values to missing paramenters.
+        </section>
+    </body>
+</html>
