@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Data Types</title>
@@ -10,15 +11,20 @@
             <li><code>var</code> can be used to specify a variable of a yet-unknown type.</li>
             <li><code>final</code>works similar to <code>var</code> but cannot be modified later, needs initialization.</li>
             <li><code>const</code> is another keyword which works like <code>final</code>, but from conpile-time.</li>
+            <li><code>dynamic</code> is another keyword allowing for dynamic typing.</li>
             <li><code>num</code> is a class from which <code>int</code>, <code>double</code> are dervied.</li>
-            <li><code>String</code> is the string class for Dart.</li>
+            <li><code>String</code> is the string class for Dart. Any number of quotes maybe used to delimit them, single or double.</li>
             <li><code>bool</code> is the boolean data type.</li>
         </ul>
         <p><code>obj.runtimeType</code> gives the data type of the variable, which is an attribute from <code>Object</code> class.</p>
         <p>
         <code>obj.toString()</code> converts all objects to <code>String</code>, if that method is defined.</p>
         </section>
-        <h2>String Interpolation</h2>
+        <header><h2>String Interpolation</h2></header>
+        <section>
+            <code><pre>print("${age}");</pre></code>
+            prints the variable <code>age</code> as a <code>String</code>. We can also write expressions inside the braces and the result will be printed.
+        </section>
         <header><h1>Operators</h1></header>
         <section>
             <p>

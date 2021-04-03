@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/mini-dark.min.css">
         <title>
             Dart Notes
         </title>
     </head>
-    <body>
-        <header><h1>Dart</h1></header>
-        <section>
+    <body class="container">
+        <header class="row"><h1>Dart</h1></header>
+        <section class="col-2">
             <header><h2>Installation</h2></header>
-            <article>
-                <p>Comes with Flutter pre-configured to best complement the library.</p>
-                <p>Follow the instructions <a href="https://dart.dev/get-dart">here</a> to install Dart, if needed.</p>
+            <article class="col-sm">
+                <p>Comes with Flutter, pre-configured to best complement the library. <br>
+                    <small>Follow the instructions <a href="https://dart.dev/get-dart">here</a> to install Dart, if needed.</small>
+                </p>
             </article>
+            <div class="container">
+                <div class="row">
+                    <div class="card warning fluid">
+                        <div class="section">
+                            <span class="icon-info inverse"></span>
+                        </div>
+                        <div class="section dark">
+                            <p>This is for people with prior experience with languages like C++ or Java. <br> I <em>might</em> make a separate set of notes for beginners.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <header><h2>Basics</h2></header>
-        <p>This is for people with prior experience.</p>
+        <header><h2>Topics</h2></header>
         <section>
-            <a href="./dtypes.html">Data Types</a>
-            <p>Brief about data types in Dart, updates added when I encounter new types.</p>
-        </section>
-        <section>
-            <a href="./control.html">Control Structures</a>
-            <p>Most of them are similar to those in C Family languages, updates will be added when I encounter new types.</p>
-        </section>
-        <section>
-            <a href="./oops.html">Object Oriented Programming</a>
-            <p>Similar to Java, any differences are listed in this page.</p>
+            <article class="offset-1">
+                <dl>
+                    <div class="row">
+                        <dt class="col-sm-3"><a href="./dtypes.html">Data Types</a></dt>
+                        <dd class="col-sm"><p>Brief about data types in Dart, updates added when I encounter new types.</p></dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-sm-3"><a href="./control.html">Control Structures</a></dt>
+                        <dd class="col-sm"><p>Most of them are similar to those in C Family languages, updates will be added when I encounter new types.</p></dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-sm-3"><a href="./oops.html">Object Oriented Programming</a></dt>
+                        <dd class="col-sm"><p>Similar to Java, any differences are listed in this page.</p></dd>
+                    </div>
+                </dl>
+            </article>
         </section>
     </body>
 </html>
