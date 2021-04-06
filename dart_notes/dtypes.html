@@ -4,44 +4,67 @@
         <title>Data Types</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/style.css">
-        
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     </head>
-    <body>
-        <section>
+    <body class="container">
+        <div class="row" style="justify-content: space-around;">
+            <a href="./index.html" class="col-sm-1" role="button"><i data-feather="home"></i>Home</a>
+        </div>
+        <section class="card fluid">
         <header><h1>Data Types</h1></header>
-        All data types are inherited from <code>Object</code> class, no primitive types like Java.
+        <article>
+        <div class="card fluid">
+        <p>All data types are inherited from <code>Object</code> class, no primitive types like Java. <br> Since all variables are objects, their default value is <code>null</code>, unless initialized.</p>
+        <p>Below key words are some keywords that can be used to define variables.</p>
         <ul>
             <li><code>var</code> can be used to specify a variable of a yet-unknown type.</li>
             <li><code>final</code>works similar to <code>var</code> but cannot be modified later, needs initialization.</li>
             <li><code>const</code> is another keyword which works like <code>final</code>, but from conpile-time.</li>
             <li><code>dynamic</code> is another keyword allowing for dynamic typing.</li>
-            <li><code>num</code> is a class from which <code>int</code>, <code>double</code> are dervied.</li>
-            <li><code>String</code> is the string class for Dart. Any number of quotes maybe used to delimit them, single or double.</li>
-            <li><code>bool</code> is the boolean data type.</li>
         </ul>
+        </div> 
+        <div class="card fluid">
+            <p>Following are the basic data types:</p>
+            <ul>
+                <li><code>num</code> is a class from which <code>int</code>, <code>double</code> are dervied. They can be initialized using hex values and scientific notation repectively.</li>
+                <li><code>String</code> is the string class for Dart. Any number of quotes maybe used to delimit them, single or double.</li>
+                <li><code>bool</code> is the boolean data type.</li>
+            </ul>
+        </div>   
         <p><code>obj.runtimeType</code> gives the data type of the variable, which is an attribute from <code>Object</code> class.</p>
-        <p>
-        <code>obj.toString()</code> converts all objects to <code>String</code>, if that method is defined.</p>
+        <p><code>obj.toString()</code> converts all objects to <code>String</code>, if that method is defined.</p> 
+        </article>
         </section>
-        <section>
+        <section class="card fluid">
             <header><h2>String Interpolation</h2></header>
-            <code><pre>print("${age}");</pre></code>
-            prints the variable <code>age</code> as a <code>String</code>. We can also write expressions inside the braces and the result will be printed.
+            <article>
+                <code><pre>print("${age}");</pre></code>
+            <p>prints the variable <code>age</code> as a <code>String</code>. We can also write expressions inside the braces and the result will be printed.</p>
+            </article>
         </section>
-        <section>
+        <section class="card fluid">
             <header><h1>Operators</h1></header>
+            <article>
             <p>
                 Most operators work similar to Java, any exceptions will be listed here.
             </p>
             <ul>
-                <li><code>==</code> no funky JS-like conversions, but works similar to that in Python.</li>
-                <li><code>+</code> no <code>String</code> concatentaion overload like in Java.</li>
+                <li><code>==</code> has no funky JS-like conversions, but works similar to that in Python.</li>
+                <li><code>+</code> has no <code>String</code> concatentaion overload like in Java.</li>
                 <li><code>++</code>, <code>--</code> exist and work like in Java and can be used for looping, may also have a <code>range</code> class like in Python.</li>
             </ul>
+        </article>
         </section>
+        <div class="row" style="justify-content: space-between;">
+            <a href="#" class="col-sm-1" role="button"><i data-feather="arrow-left"></i>Previous</a>
+            <a href="./control.html" class="col-sm-1" role="button">Next<i data-feather="arrow-right"></i></a>
+        </div>
         <footer>
             <p>By: Mukul Paras Potta</p>
             <p>Using HTML5 and mini.css</p>
         </footer>
+        <script>
+            feather.replace({"width":"20", "height":"20"});
+        </script>
     </body>
 </html>

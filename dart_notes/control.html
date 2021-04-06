@@ -4,11 +4,17 @@
         <title>Control Structures</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     </head>
-    <body>
-        <section>
+    <body class="container">
+        <div class="row" style="justify-content: space-around;">
+            <a href="./index.html" class="col-sm-1" role="button"><i data-feather="home"></i>Home</a>
+        </div>
+        <section class="card fluid">
         <header><h1>Control Structures</h1></header>
-        Control Structures like:  
+        <article>
+            <div class="card fluid">
+        <p>Control Structures like: </p>  
         <ul>
             <li><code>if(cond){...} else if(cond){...} ... else{...}</code>,</li>
             <li><code>for( ; ; )</code>,</li>
@@ -16,16 +22,19 @@
             <li><code>do{...}while(cond);</code>,</li>
             <li><code>switch(exp){case exp: ...}</code>,</li>
         </ul>
-        <p>work like in those in C Family of languages (C, C++, Java etc.)</p>
+        <p>work like in those in C Family of languages (C, C++, Java etc.)</p></div>
+        <div class="card fluid">
         <h3>Some built-in data structures:</h3>
         <ul>
             <li><code>[ ... ]</code> is used to define <code>List</code> objects, which work like <code>list</code> from Python, which are iterable objects</li>
             <li><code>{key: value, ... }</code> is used to define <code>Map</code> objects, which work like <code>dict</code> from Python.</li>
         </ul>
-        <p>The above structures may or may not be dynamic-typed, like in Python.</p>
-        </section>
-        <section>
+        <p>The above structures may or may not be dynamic-typed, like in Python.</p></div>
+    </article>    
+    </section>
+        <section class="card fluid">
             <header><h2> <code>forEach</code> looping</h2></header>
+            <article>
             Let's look at an example.
         <code><pre>
         var list1 = ['A', 'B', 'C'];
@@ -42,10 +51,10 @@
 A
 B
 C
-            </pre></code>
+            </pre></code></article>
         </section>
-        <section>
-            <header><h1>Functions</h1></header>
+        <section class="card fluid">
+            <header><h1>Functions</h1></header><article>
             <p>
                 Syntax like C Family, but supports nested functions like in Python.
             </p>
@@ -72,10 +81,18 @@ C
             printIt("Mukul", "20");
         }</pre></code>
         <code>optional_param ?? default_value</code> is one feature we can use to assign values to missing paramenters.
+    </article>
         </section>
+        <div class="row" style="justify-content: space-between;">
+            <a href="./dtypes.html" class="col-sm-1" role="button"><i data-feather="arrow-left"></i>Previous</a>
+            <a href="./oops.html" class="col-sm-1" role="button">Next<i data-feather="arrow-right"></i></a>
+        </div>
         <footer>
             <p>By: Mukul Paras Potta</p>
             <p>Using HTML5 and mini.css</p>
         </footer>
+        <script>
+            feather.replace({"width":"20", "height":"20"});
+        </script>
     </body>
 </html>
