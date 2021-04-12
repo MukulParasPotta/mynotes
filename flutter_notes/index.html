@@ -1,29 +1,47 @@
 <html>
     <head>
         <title>Flutter Notes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
-    <body>
+    <body class="container">
         <header><h1>Flutter</h1></header>
-        <section>
-            <article>
+        <div class="row">
+            <nav>
+                <a href="#">Creating a new project</a>
+            </nav>
+            <section class="card large">
                 <header><h2>Installation</h2></header>
-                <p>
-                    Flutter needs JDK 8 so make sure it is installed and configured properly.
-                    <br>
-                    <code>sudo apt-get install openjdk-8</code>
-                    <br>
-                    or follow <a href="https://dev.to/ejgamer21/install-flutter-without-android-studio-58bi">this</a> process to setup Flutter.
-                    This concludes all the pre-requisites. 
-                    <br><br>
-                </p>
-                <p>
-                    Run <br> <code>flutter doctor</code> <br> to verify the installation.
-                </p>
-                <p>
-                    Once that is done, you might have to run <br> <code>flutter doctor --android-licenses</code> <br>
-                    to review and accept the licenses of the software used as part of Flutter.</p>
-            </article>
-        </section>
-
+                <article class="section">
+                    <h3>Step 1:</h3>
+                    <p>
+                        Flutter needs JDK 8 so make sure it is installed and configured properly.
+                        <code> <pre> sudo apt-get install openjdk-8 </pre></code>
+                        <div class="container">
+                            <div class="row">
+                                <div class="card warning fluid">
+                                    <div class="section">
+                                        <span class="icon-info"></span> Warning!!
+                                    </div>
+                                    <div class="section dark">
+                                        <p>The following link is for people with experience in Android development, and I <b>recommend</b> beginners to use Android Studio for developing Flutter apps, follow instructions <a href="https://flutter.dev/docs/get-started/install">here</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        or follow <a href="https://dev.to/ejgamer21/install-flutter-without-android-studio-58bi">this</a> process to setup Flutter.
+                        This concludes all the pre-requisites. 
+                    </p>
+                    <h3>Step 2:</h3>
+                    <p>
+                        Run<code><pre>flutter doctor </pre></code> to verify the installation.
+                    </p>
+                    <h3>Step 3:</h3>
+                    <p>
+                        Once that is done, you might have to run<code> <pre>flutter doctor --android-licenses</pre></code>
+                        to review and accept the licenses of the software used as part of Flutter. (think of it like accepting EULAs)</p>
+                </article>
+            </section>
+        </div>
     </body>
 </html>
