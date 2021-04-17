@@ -29,13 +29,13 @@
             <li><code>[ ... ]</code> is used to define <code>List</code> objects, which work like <code>list</code> from Python, which are iterable objects</li>
             <li><code>{key: value, ... }</code> is used to define <code>Map</code> objects, which work like <code>dict</code> from Python.</li>
         </ul>
-        <p>The above structures may or may not be dynamic-typed, like in Python.</p></div>
+        <p>The above structures work like generics from Java, but type-inferred.</p></div>
     </article>    
     </section>
         <section class="card fluid">
             <header><h2> <code>forEach</code> looping</h2></header>
             <article>
-            Let's look at an example.
+            <p>Let's look at an example.</p>
         <code><pre>
         var list1 = ['A', 'B', 'C'];
         print(list1);
@@ -69,7 +69,7 @@ C
             printIt("Mukul", "20");
         }</pre>
         </code>
-        If we change the signature to <code>void printIt(String name, [String age])</code>, <code>age</code> becomes an optional parameter. In that case,
+        <p>If we change the signature to <code>void printIt(String name, [String age])</code>, <code>age</code> becomes an optional parameter. In that case,</p> 
         <code><pre>
         void main(){
             var x = 10;
@@ -80,7 +80,8 @@ C
             }
             printIt("Mukul", "20");
         }</pre></code>
-        <code>optional_param ?? default_value</code> is one feature we can use to assign values to missing paramenters.
+        <p><code>optional_param ?? default_value</code> is one feature we can use to assign values to missing paramenters.</p> 
+        <p>One-liner functions can be defined using Python-like syntax. <br> <code>int isEven(int n) : return (n % 2) == 0;</code></p>
     </article>
         </section>
         <div class="row" style="justify-content: space-between;">

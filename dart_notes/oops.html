@@ -12,12 +12,7 @@
         <div class="row" style="justify-content: space-around;">
             <a href="./index.html" class="col-sm-1" role="button"><i data-feather="home"></i>Home</a>
         </div>
-        <section>
-            <header><h1>Functions</h1></header>
-            <p>Functions outside classes can be defined like in C/C++.</p>
-            <p>One-liner functions can be defined using Python-like syntax. <br> <code>int isEven(int n) : return (n % 2) == 0;</code></p>
-        </section>
-        <section>
+        <section class="card fluid">
             <header><h1>OOPS</h1></header>
             <p>Very similar to Java, except that there are no access modifiers like <code>private</code>, <code>protected</code> etc.</p>
             <p>Following are similar to Java:</p>
@@ -26,8 +21,52 @@
                 <li>Class definition syntax, which includes attributes and member function definitions.</li>
                 <li>Inheritance and <code>super</code> keyword. <br> <code><pre>class SU extends U {SU() : super();}</pre></code></li>
                 <li>Some generic classes like <code>List&lt;&gt;</code> are similar to those in Java.</li>
+                <li><code>abstract</code> class is also used as <code>interface</code>.</li>
             </ul>
             <p></p>
+        </section>
+        <section class="card fluid">
+            <header><h2><code>extension</code> and <code>mixin</code></h2></header>
+            <section>
+                <p>Extensions are a way to add functionality, when needed, to classes already defined and available where it (the extension) is going to be used.</p>
+                <p>They are defined as follows:</p>
+                <code>
+<pre>extension A_Ext on String {
+    bool isA() => ...
+    // Converts a string into a A
+    Fraction toA() => A.fromString(this);
+}</pre>
+                </code>
+                <p>And used as below:</p>
+                <code>
+<pre>void main() {
+    // str is defined similar to A's string representation
+    if (str.isA()) {
+        final a = str.toA();
+    }
+}</pre>
+                </code>
+                <p>The variable being converted (or on which the extension is to be applied) must have the type defined, i.e., this doesn't work with <code>dynamic</code> variables.</p>
+            </section>
+            <section>
+                <p>Mixins are like classes but those which can provide functionality without inheritance. These do not have a constructor, and any class without a constructot defined can be used as a mixin (but not recommended due to readability issues).</p>
+                <code>
+<pre>mixin Swimming {
+    void swim() => print("Swimming");
+    bool likesWater() => true;
+}</pre>
+                </code>
+                <p>Defined as above, these can be used with any class to provide additional functionality without inheritance, overriding etc. <code>with</code> keyword is used to use mixins with a class.</p>
+                <code>
+<pre>class Human with Swimming {
+    final String _name;
+    final String _surname;
+    Human(this._name, this._surname);
+    void printName() => "$_name $_surname";
+}</pre>
+                </code>
+                <p>Like <code>extension</code>, <code>mixin</code> can also be restricted to a particular class using the <code>on</code> keyword as used in Extensions.</p>
+            </section>
         </section>
         <div class="row" style="justify-content: space-between;">
             <a href="./control.html" class="col-sm-1" role="button"><i data-feather="arrow-left"></i>Previous</a>
